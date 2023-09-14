@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    scroll-behavior: smooth;
+}
+/* HEADER------------------------------------------------------------------------------------ */
+.homePage{
+    background: url(/Images/Photos/image-header.jpg);
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+.logo {
+    width : 200px;
+    margin-left: 25px;
+}
+nav{
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+
+nav ul li a:hover{
+    color:hsl(212, 27%, 19%);
+    background: hsla(0, 0%, 100%);
+    border-radius: 30px;
+    padding: 20px;
+    font-family: 'Fraunces';
+    font-size: small;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+h1 {
+    color: hsl(0, 0%, 100%);
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Fraunces';
+    font-size: 56px;
+    letter-spacing: 6px;
+}
+.arrowDown {
+    height : 100px;
+    margin-left: 25px;
+    transition: transform 2s;
+}
+.arrowDown:hover {
+    transform: translateY(50px);
+}
+/* HEADER-END-------------------------------------------------------------------------------- */
+
