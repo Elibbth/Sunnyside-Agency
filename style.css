@@ -35,13 +35,13 @@ header nav ul li{
 }
 header nav ul li a{
     text-decoration: none;
+    padding: 20px;
     color: hsl(0, 0%, 100%);
 }
 header nav ul li a:hover{
     color:hsl(212, 27%, 19%);
     background: hsla(0, 0%, 100%);
     border-radius: 30px;
-    padding: 20px;
     font-family: 'Fraunces';
     font-size: small;
     text-transform: uppercase;
@@ -64,12 +64,128 @@ h1 {
     transform: translateY(50px);
 }
 /* HEADER-END-------------------------------------------------------------------------------- */
-
-/* SECTION GALLERY--------------------------------------------------------------------------- */
-div .gallery {
-    display: flex;
-    align-content: space-around;
+/* SECTION SERVICES-------------------------------------------------------------------------- */
+.services {
+    box-sizing: border-box;
+    display: block;
 }
+
+.services p {
+    color: #A8A9AA;
+    text-align: center;
+}
+.services a {
+    text-decoration: none;
+    color: hsl(212, 27%, 19%);
+    font-family: 'Fraunces';
+    font-weight: 800;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+.zone {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.zone img {
+    width: 50%;
+}
+h2 {
+    font-family: 'Fraunces';
+    color: hsl(212, 27%, 19%);
+    font-size:xx-large;
+    text-align: center;
+}
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+
+/* ------------------------------------------------------------------------------------------ */
+
+/* SECTION AVIS --------------------------------------------------------------------------*/
+.avis {
+    background-color: #FDF8F1;
+    background-size: cover;
+    background-position: center;
+    padding: 150px;
+}
+h3 {
+    text-align: center;
+    color: #A8A9AA;
+    text-transform: uppercase;
+    font-family: 'Fraunces';
+    letter-spacing: 6px;
+    padding-bottom: 50px;
+}
+    .avisClient {
+        text-align: center;
+        column-count: 3;
+    }
+        .avisClient img {
+            border-radius: 50%;
+            width: 4.5rem;
+    }
+    .client {
+        color: hsl(232, 10%, 55%);
+        font-weight: 500;
+        padding: 30px 55px 30px 0;
+    }
+    .job {
+        color: #A8A9AA;
+        font-size: small;
+    }
+h4 {
+    font-family: 'Fraunces';
+    color: hsl(212, 27%, 19%);
+}
+@media screen and (max-width: 768px) {
+    .avisClient {
+        padding: 5rem 2rem;
+        box-sizing: border-box;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .avis {
+        width: 100%;
+        box-sizing: border-box;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .avisClient img {
+        overflow-clip-margin: content-box;
+    }
+    h3 {
+        box-sizing: border-box;
+        justify-content: center;
+    }
+}
+
+/* Clients end------------------------------------------------------------------------------ */
+
+/* DIV GALLERY--------------------------------------------------------------------------- */
+
+.pix {
+    display: flex;
+    flex-wrap: wrap;
+}
+.pix div {
+    width: 25%;
+}
+.pix img {
+    width: 100%;
+}
+    /* @media (max-width: 480px) {
+        .pix {
+            flex-direction: column;
+        }
+    } */
 /* GALLERY - END ---------------------------------------------------------------------------- */
 
 /* FOOTER ----------------------------------------------------------------------------------- */
@@ -110,8 +226,8 @@ footer nav ul li a:hover{
     text-transform: uppercase;
     font-weight: bold;
 }
-.socMedia {
-    /* ESPACE ENTRE ICON */
+.socMedia img{
+    margin: 0 10px;
 }
 /* FOOTER - END ----------------------------------------------------------------------------- */
 
