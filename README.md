@@ -9,9 +9,9 @@ Vous n'avez pas encore besoin d'implémenter le menu burger sur la vue mobile, c
 
 L'objectif est de concevoir un site à partir d'un design :
 
-    -Écrivez du HTML significatif et sémantiquement correct (vérifiez sur W3C).
-    -Utiliser des techniques de positionnement modernes en utilisant le modèle gridet/ouflexbox.
-    -Familiarisez-vous avec la méthodologie BEM
+    -Écrir du HTML significatif et sémantiquement correct.
+    -Utiliser des techniques de positionnement modernes en utilisant le modèle grid et/ou flexbox.
+    -Se familiariser avec la méthodologie BEM.
     -Créer une intégration « au pixel près » à partir d'un wireframe donné.
 
 ## En rapport à :
