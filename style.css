@@ -103,7 +103,20 @@ h2 {
     align-items: center;
     width: 50%;
 }
-
+.cherry {
+    background: url(/Images/Photos/image-graphic-design.jpg);
+}
+    .cherry p {
+        text-align: center;
+        color: hsl(158, 28%, 19%);
+    }
+.agrum {
+    background: url(/Images/Photos/image-photography.jpg);
+}
+    .agrum p {
+        text-align: center;
+        color: hsl(212, 27%, 19%);
+    }
 
 /* ------------------------------------------------------------------------------------------ */
 
