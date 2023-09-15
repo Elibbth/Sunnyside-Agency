@@ -47,6 +47,11 @@ header nav ul li a:hover{
     text-transform: uppercase;
     font-weight: bold;
 }
+.liveButton {
+    color:hsl(212, 27%, 19%);
+    background: hsla(0, 0%, 100%);
+    border-radius: 30px;
+}
 h1 {
     color: hsl(0, 0%, 100%);
     text-transform: uppercase;
@@ -63,17 +68,34 @@ h1 {
 .arrowDown:hover {
     transform: translateY(50px);
 }
+.menuButton {
+    display: none;
+    background-color: transparent;
+    color: hsl(0, 0%, 100%);
+    padding: 5px 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 0.8rem; 
+}
+@media screen and (max-width: 768px) {
+    header nav ul {
+        display: none; 
+    }
+    header nav ul.active {
+        position: absolute;
+        top: 25%;
+        left: 37%;
+        display: block; /*active :affiche (barre menu)*/
+    }
+    .menuButton {
+        display: block;
+    }
+}
 /* HEADER-END-------------------------------------------------------------------------------- */
 /* SECTION SERVICES-------------------------------------------------------------------------- */
-.services {
-    box-sizing: border-box;
-    display: block;
-}
 
-.services p {
-    color: #A8A9AA;
-    text-align: center;
-}
 .services a {
     text-decoration: none;
     color: hsl(212, 27%, 19%);
@@ -83,40 +105,72 @@ h1 {
     display: flex;
     align-items: center;
 }
-.zone {
+    /* Zone & 4vignettes  (info=h2+p+a) */
+.zoneOne {
     display: flex;
     flex-wrap: wrap;
-    box-sizing: border-box;
+    text-align: center;
+    width: 100%;
 }
-.zone img {
-    width: 50%;
-}
-h2 {
+.zoneOne h2 {
     font-family: 'Fraunces';
     color: hsl(212, 27%, 19%);
     font-size:xx-large;
     text-align: center;
 }
+.zoneOne img {
+    width: 50%;
+}
 .info {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     width: 50%;
+}
+.info p {
+    color: #A8A9AA;
+    text-align: center;
+}
+    /* Zone 2 2vignette bcground --------------------------------------------------------- */
+.zoneTwo {
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 600px;
+}
+.zoneTwo h2 {
+    font-family: 'Fraunces';
 }
 .cherry {
     background: url(/Images/Photos/image-graphic-design.jpg);
+    background-size: cover;
+    text-align: center;
+    color: #24554A;
 }
-    .cherry p {
-        text-align: center;
-        color: hsl(158, 28%, 19%);
-    }
+
 .agrum {
     background: url(/Images/Photos/image-photography.jpg);
+    background-size: cover;
+    text-align: center;
+    color: #052C3B;
+    display: flex;
+    align-items: flex-end;
 }
-    .agrum p {
-        text-align: center;
-        color: hsl(212, 27%, 19%);
+@media screen and (max-width: 768px) {
+    .zoneOne {
+        display: flex;
+        flex-direction: column;
     }
+    .zoneOne img {
+        width: 100%;
+    }
+    .info {
+        width: 100%;
+        padding: 0 24px;
+    }
+}
 
 /* ------------------------------------------------------------------------------------------ */
 
@@ -125,7 +179,9 @@ h2 {
     background-color: #FDF8F1;
     background-size: cover;
     background-position: center;
-    padding: 150px;
+    padding: 150px 0;
+    width: 100%;
+    text-align: center;
 }
 h3 {
     text-align: center;
@@ -136,8 +192,10 @@ h3 {
     padding-bottom: 50px;
 }
     .avisClient {
-        text-align: center;
-        column-count: 3;
+        display: flex;
+        justify-content: center;
+        gap: 48px;
+        width: 100%;
     }
         .avisClient img {
             border-radius: 50%;
@@ -146,7 +204,7 @@ h3 {
     .client {
         color: hsl(232, 10%, 55%);
         font-weight: 500;
-        padding: 30px 55px 30px 0;
+        padding: 30px 0px 30px 0;
     }
     .job {
         color: #A8A9AA;
@@ -158,7 +216,7 @@ h4 {
 }
 @media screen and (max-width: 768px) {
     .avisClient {
-        padding: 5rem 2rem;
+        padding: 5rem 1rem;
         box-sizing: border-box;
         justify-content: center;
         display: flex;
@@ -190,6 +248,7 @@ h4 {
 }
 .pix div {
     width: 25%;
+    display: flex;
 }
 .pix img {
     width: 100%;
