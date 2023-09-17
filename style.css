@@ -7,7 +7,7 @@ body {
 }
 /* HEADER------------------------------------------------------------------------------------ */
 .homePage{
-    background: url(image-header.jpg);
+    background: url(Images/Photos/image-header.jpg);
     text-align: center;
     background-size: cover;
     background-position: center;
@@ -110,7 +110,6 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
-    width: 100%;
 }
 .zoneOne h2 {
     font-family: 'Fraunces';
@@ -144,7 +143,7 @@ h1 {
     font-family: 'Fraunces';
 }
 .cherry {
-    background: url(image-graphic-design.jpg);
+    background: url(Images/Photos/image-graphic-design.jpg);
     background-size: cover;
     text-align: center;
     color: #24554A;
