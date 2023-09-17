@@ -7,7 +7,7 @@ body {
 }
 /* HEADER------------------------------------------------------------------------------------ */
 .homePage{
-    background: url(Images/Photos/image-header.jpg);
+    background: url("Images/Photos/image-header.jpg");
     text-align: center;
     background-size: cover;
     background-position: center;
